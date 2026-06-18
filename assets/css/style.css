@@ -165,7 +165,7 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.25rem;
   list-style: none;
   align-items: center;
 }
@@ -574,6 +574,6 @@ img {
   }
 
   .nav-links.open {
-    max-height: 320px;
+    max-height: 640px;
   }
 }
