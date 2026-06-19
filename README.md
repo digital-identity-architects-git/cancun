@@ -45,7 +45,7 @@ A workflow at `.github/workflows/deploy.yml` deploys the site automatically.
 2. Push to the `claude/zen-cannon-6e3ad1` branch (the workflow's trigger branch).
 3. The site publishes at the URL shown under Settings → Pages.
 
-After you have the final URL, replace the `https://example.com/` placeholders in
+After you have the final URL, replace the `https://cancunitineraries.com/` placeholders in
 `sitemap.xml`, `robots.txt`, and the `<link rel="canonical">` / `og:` tags.
 
 ## Stack
