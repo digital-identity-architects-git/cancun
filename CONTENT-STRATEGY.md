@@ -251,4 +251,19 @@ This is **not** a generic info site — it's a **content-driven sales funnel for
 
 ---
 
+## Decisions locked & open items (as of 2026-06-21)
+
+**Decisions locked:**
+- **Booking flow:** CTAs link out to `charliethetraveler.com/multiday-tours/yucatan/` and we **display the discount code** for buyers to enter at checkout. (Not an affiliate tracking URL — so attribution rides on the code; make the code prominent and unique to us.)
+- **Build status:** **On hold.** Strategy is finalized; page-building waits until the discount code is delivered. No money page or CTA retrofit built yet.
+
+**Open items (blockers before build):**
+1. ⏳ **Discount code** — Charlie is setting it up. *Need the exact code string.* This unblocks the money page, the sitewide ribbon, and every CTA.
+2. ⏳ **Charlie's videos/photos** — permission **not yet confirmed.** Do not publish his media until written permission + attribution terms exist. Design will use placeholders / our own relocation photos until then.
+3. ☐ **Affiliate terms** — confirm commission rate and whether a tracking link is ever offered (would beat code-only attribution). Informs FTC disclosure wording.
+
+**When the code lands, build order:** `/yucatan-tour/` money page → sitewide discount ribbon → CTA retrofit on existing pages → `/disclosure.html` (FTC) → Phase-1 itinerary pages that funnel into the tour.
+
+---
+
 *This is a living document. As pages publish, check them off and wire the internal links per the rules above.*
