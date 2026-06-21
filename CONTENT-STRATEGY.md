@@ -4,6 +4,45 @@
 > **Domain:** cancunitineraries.com
 > **Edge:** First-hand experience (we're relocating to Cancún) + original photography on every page.
 > **Method:** Pillar-and-cluster architecture. Each cluster has one broad pillar page that links down to deep, specific cluster posts; cluster posts link back up and sideways. This is what builds *semantic topical authority* — Google sees the site comprehensively covers the entity "Cancún travel."
+> **Primary conversion goal:** Drive bookings of **Charlie the Traveler's 7-Day Cancún & Yucatán tour** via our exclusive discount code (affiliate). Every page is a feeder to this one product.
+
+---
+
+## ⭐ THE BUSINESS MODEL (read this first)
+
+This is **not** a generic info site — it's a **content-driven sales funnel for one hero product**: Charlie the Traveler's *7-Day Cancún & the Yucatán Peninsula* luxury tour. We earn on bookings made with our discount code. Everything below serves that.
+
+**Why this product fits the site perfectly:** the tour's stops *are* our content clusters. The traffic we rank for is already researching the exact experiences the tour delivers — so each informational page has a natural, honest "...or let someone do it all for you" hand-off.
+
+| The tour includes | Our matching cluster | Funnel page does this |
+|---|---|---|
+| Isla Mujeres catamaran + MUSA underwater museum | Day Trips (#31), Things to Do (#25) | Rank the topic → "the catamaran + MUSA combo is Day 4 of the tour" |
+| Cozumel reefs & snorkeling | Day Trips (#32) | Same |
+| Chichén Itzá + guided tour | Day Trips (#29) | "Skip the 2hr DIY bus — it's a guided day on the tour" |
+| Valladolid colonial town | Day Trips (#35) | Same |
+| Cenotes swim | Cenotes (#45–47) | Same |
+| Tulum ruins | Maya Ruins (#56), Day Trips (#30) | Same |
+| Río Lagartos + Las Coloradas pink lakes | Day Trips (#36) | "Hard to reach solo — included on the tour" |
+| Luxury hotels, transport, guides, no single supplement | Where to Stay (#60, 67), Getting Around (#84–90) | "DIY logistics vs. all-handled" |
+
+### The conversion mechanics
+
+1. **DIY-vs-Tour is our highest-converting angle.** Someone Googling *"how to get from Cancún to Chichén Itzá"* or *"Yucatán road trip itinerary"* is mid-decision: do it myself or book a tour. We intercept with honesty — *"Here's exactly how to DIY it (real bus routes, real costs)... but if you'd rather have it all booked, hotels-transport-guides included, here's the 7-day tour I vetted, and a discount code."* We earn trust by genuinely helping either way; the ones who want convenience convert.
+2. **The relocation angle is the trust bridge.** "I live in Cancún, I vetted this operator, here's my honest take + a reader discount." First-hand authority is *why* the affiliate recommendation is believable — it ties our E-E-A-T moat directly to the sale.
+3. **Charlie's videos + photos = ready-made conversion assets.** Authentic tour footage (real guests, real stops) raises dwell time, trust, and "this is real" signal far beyond stock. Embed video on the money page and every matching cluster page. *(Rights: confirm written permission/attribution terms with Charlie before publishing — see open items.)*
+4. **One discount code, shown everywhere, with urgency.** Display the code on the hero money page, in a sitewide ribbon/banner, and in the CTA block of every tour-matched page. Track that the code is what closes.
+
+### Conversion architecture (what to build)
+
+- **`/yucatan-tour/` — the money page (hero).** The single best-converting URL on the site. Spec:
+  - Above the fold: hero video/photo, headline ("See & Do It ALL — 7 Days, Cancún & the Yucatán"), the discount code + primary CTA button (→ Charlie's booking page with our affiliate link/code).
+  - Day-by-day itinerary (Day 1 Playa del Carmen → Cozumel catamaran → Chichén Itzá/Valladolid/cenote → Isla Mujeres + MUSA → Tulum → Río Lagartos/Las Coloradas), each day linking to our deep cluster page on that stop.
+  - "What's included / not included," luxury-hotels gallery, FAQ, social-proof (Charlie's reviews/videos), and a sticky "Book with code XXXX" bar.
+  - Schema: `TouristTrip` + `Product`/`Offer` + `FAQPage`.
+- **Sitewide CTA retrofit.** Every existing page's vague "Plan My Trip / Contact" CTA → swap to **"See the 7-Day Yucatán Tour → save with code XXXX."** The homepage hero's primary button points to `/yucatan-tour/`.
+- **Sitewide discount ribbon.** A thin dismissible top bar: *"⭐ Reader exclusive: save on Charlie's 7-Day Yucatán Tour — code XXXX."*
+- **FTC/affiliate disclosure (required).** A clear, conspicuous disclosure on every page that links the offer ("This page contains affiliate links; we earn a commission on bookings made with our code, at no extra cost to you"). Add a `/disclosure.html` and link it in the footer. Non-negotiable for legal compliance and trust.
+- **The 100 topics still get built** — they're the traffic engine. But priority re-tiers by *tour-match*: pages matching a tour stop (the table above) jump to 🔴, because they convert, not just rank.
 
 ---
 
@@ -20,7 +59,8 @@
 
 | # | Cluster | Pillar page | Role |
 |---|---------|-------------|------|
-| 1 | **Itineraries** | `/cancun-itinerary/` | Money hub. By duration, traveler, season. |
+| 0 | **★ Yucatán Tour (the product)** | `/yucatan-tour/` | **Money page. All clusters funnel here. Discount code + affiliate CTA.** |
+| 1 | **Itineraries** | `/cancun-itinerary/` | Brand hub. Every itinerary ends with "or book the done-for-you 7-day tour." |
 | 2 | Things to Do | `/things-to-do.html` *(exists — expand)* | Activity feeder. |
 | 3 | Day Trips & Excursions | `/day-trips/` | Tulum, Chichén Itzá, islands. |
 | 4 | Beaches | `/cancun-beaches/` | Visual, photo-heavy. |
