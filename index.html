@@ -3,190 +3,250 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cancún, Mexico — All-Inclusive Resorts, Weather, Things to Do &amp; Travel Guide</title>
-  <meta name="description" content="Plan your trip to Cancún, Quintana Roo, Mexico. Compare all-inclusive resorts and hotels, check the weather and best time to visit, find things to do, flights and airport transfers — all in one Caribbean travel guide." />
-  <meta name="keywords" content="cancun, cancun mexico, cancun all inclusive, cancun resorts, cancun hotels, cancun weather, cancun things to do, cancun quintana roo" />
+  <title>UX Design Portfolio — Marketing, Music, Design, Fashion &amp; Writing</title>
+  <meta name="description" content="A multidisciplinary creative portfolio: a marketing agency, original music, UX design, Twilight Shamanwear fashion, and published writing — all in one world." />
+  <meta name="keywords" content="ux design portfolio, marketing agency, ux design expert, singer rapper, fashion artist, twilight shamanwear, author" />
   <link rel="canonical" href="https://cancunitineraries.com/index.html" />
-  <meta property="og:title" content="Cancún, Mexico — All-Inclusive Resorts, Weather &amp; Things to Do" />
-  <meta property="og:description" content="Your complete Cancún travel guide: all-inclusive resorts, hotels, weather, attractions, flights and airport transfers." />
+  <meta property="og:title" content="UX Design Portfolio — Explore My World" />
+  <meta property="og:description" content="Marketing agency, music, UX design, Twilight Shamanwear fashion, and writing — one creative universe." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://cancunitineraries.com/assets/img/cancun-day.webp" />
   <meta property="og:url" content="https://cancunitineraries.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav-logo"><span class="pin">📍</span> Cancún</a>
+      <a href="index.html" class="brand" aria-label="UX Design Portfolio home">
+        <span class="brand-mark">UX</span>
+        <span class="brand-text">
+          <strong>UX DESIGN</strong>
+          <em>PORTFOLIO</em>
+        </span>
+      </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="all-inclusive-resorts.html">All-Inclusive</a></li>
-        <li><a href="hotels.html">Hotels</a></li>
-        <li><a href="things-to-do.html">Things to Do</a></li>
-        <li><a href="weather.html">Weather</a></li>
-        <li><a href="getting-there.html">Getting There</a></li>
-        <li><a href="travel-tips.html">Travel Tips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero">
-    <button class="daynight-toggle" aria-label="Switch to nighttime view">🌙 Night</button>
-    <div class="container hero-content">
-      <h1>Cancún, Mexico — Your Caribbean Paradise</h1>
-      <p>Sun-drenched beaches by day, an electric glow by night. Compare all-inclusive resorts, check the weather, and discover the best things to do in Cancún, Quintana Roo.</p>
-      <div class="hero-actions">
-        <a href="all-inclusive-resorts.html" class="btn btn-primary">Browse All-Inclusive Resorts</a>
-        <a href="things-to-do.html" class="btn btn-outline">Explore Things to Do</a>
+  <!-- ===== Hero / Cards ===== -->
+  <section class="hero" id="home">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="deck" role="list">
+
+      <!-- Card 1: Singer & Rapper (far left) -->
+      <article class="tarot pos-1" role="listitem">
+        <div class="tarot-inner">
+          <h2 class="tarot-title">SINGER &amp;<br>RAPPER</h2>
+          <span class="tarot-rule" aria-hidden="true"></span>
+          <div class="tarot-grid">
+            <span class="tg a"></span><span class="tg b"></span>
+            <span class="tg c"></span><span class="tg d"></span>
+          </div>
+          <p class="tarot-desc">Original music with heart and edge — tracks and verses made for the glow of the night.</p>
+          <span class="tarot-crest" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 2: UX Design Expert -->
+      <article class="tarot pos-2" role="listitem">
+        <div class="tarot-inner">
+          <h2 class="tarot-title">UX DESIGN<br>EXPERT</h2>
+          <span class="tarot-rule" aria-hidden="true"></span>
+          <div class="tarot-grid">
+            <span class="tg a"></span><span class="tg b"></span>
+            <span class="tg c"></span><span class="tg d"></span>
+          </div>
+          <p class="tarot-desc">Human-centered design that turns complex products into effortless, elegant experiences.</p>
+          <span class="tarot-crest" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 5h16v10H4zM2 17h20v2H2zm10-9l3 3-3 3-3-3z"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 3: Marketing Agency (center / front) -->
+      <article class="tarot pos-3 is-front" role="listitem">
+        <div class="tarot-inner">
+          <div class="tarot-emblem" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="86" height="86">
+              <g fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="26" y="26" width="48" height="48"/>
+                <rect x="26" y="26" width="48" height="48" transform="rotate(45 50 50)"/>
+                <circle cx="50" cy="50" r="30"/>
+              </g>
+              <text x="50" y="58" text-anchor="middle" font-family="Cinzel, serif" font-size="22" fill="currentColor">UX</text>
+            </svg>
+          </div>
+          <h2 class="tarot-title big">MARKETING<br>AGENCY</h2>
+          <span class="tarot-rule arrows" aria-hidden="true"></span>
+          <div class="tarot-grid">
+            <span class="tg a"></span><span class="tg b"></span>
+            <span class="tg c"></span><span class="tg d"></span>
+          </div>
+          <p class="tarot-desc">Visionary. Strategist. Creator. Full-service marketing that builds brands, systems, and campaigns that leave a lasting impact.</p>
+          <span class="tarot-crest big" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 4: Author -->
+      <article class="tarot pos-4" role="listitem">
+        <div class="tarot-inner">
+          <h2 class="tarot-title">AUTHOR</h2>
+          <span class="tarot-rule" aria-hidden="true"></span>
+          <div class="tarot-grid">
+            <span class="tg a"></span><span class="tg b"></span>
+            <span class="tg c"></span><span class="tg d"></span>
+          </div>
+          <p class="tarot-desc">Stories that inspire, challenge, and transport. Explore my written works and creative journey.</p>
+          <span class="tarot-crest" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 4h7v16H4zm9 0h7v16h-7z"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 5: Fashion Artist — Twilight Shamanwear (far right) -->
+      <article class="tarot pos-5" role="listitem">
+        <div class="tarot-inner">
+          <h2 class="tarot-title">FASHION<br>ARTIST</h2>
+          <span class="tarot-rule" aria-hidden="true"></span>
+          <div class="tarot-grid">
+            <span class="tg a"></span><span class="tg b"></span>
+            <span class="tg c"></span><span class="tg d"></span>
+          </div>
+          <p class="tarot-desc">Twilight Shamanwear — handmade ponchos and spiritual hoodies that come alive in the moonlight, for every country and culture.</p>
+          <span class="tarot-crest" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a4 4 0 01-4 4L3 9l3 4v9h12v-9l3-4-5-3a4 4 0 01-4-4z"/></svg>
+          </span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="hero-cta">
+      <p class="explore">EXPLORE MY WORLD</p>
+      <a href="#portfolio" class="scroll-arrow" aria-label="Scroll to portfolio">
+        <span></span><span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container narrow">
+      <h2 class="section-title">About</h2>
+      <p class="section-subtitle">Five crafts, one creative universe. I move between strategy and art — building brands and systems by day, and making music, apparel, and stories that mean something after dark.</p>
+      <div class="pillars">
+        <div class="pillar"><span class="pillar-num">01</span><h3>Marketing</h3><p>Brand strategy, campaigns, and growth systems built to last.</p></div>
+        <div class="pillar"><span class="pillar-num">02</span><h3>Music</h3><p>Singer and rapper — original tracks with heart and edge.</p></div>
+        <div class="pillar"><span class="pillar-num">03</span><h3>UX Design</h3><p>Human-centered product and interface design.</p></div>
+        <div class="pillar"><span class="pillar-num">04</span><h3>Fashion</h3><p>Twilight Shamanwear — handmade spiritual apparel.</p></div>
+        <div class="pillar"><span class="pillar-num">05</span><h3>Writing</h3><p>Author of stories that inspire and transport.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Quick links / clusters ===== -->
-  <section class="section">
+  <!-- ===== Portfolio ===== -->
+  <section class="section alt" id="portfolio">
     <div class="container">
-      <h2 class="section-title">Plan Your Cancún Trip</h2>
-      <p class="section-subtitle">Everything you need to plan the perfect Cancún vacation — from where to stay to when to go and how to get around.</p>
+      <h2 class="section-title">Portfolio</h2>
+      <p class="section-subtitle">A closer look at each world.</p>
       <div class="grid grid-3">
-        <a class="card" href="all-inclusive-resorts.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">🏝️</div>
-            <h3>All-Inclusive Resorts</h3>
-            <p>Adults-only, family, and luxury all-inclusive resorts in Cancún — packages, deals and what's included.</p>
-          </div>
-        </a>
-        <a class="card" href="hotels.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">🏨</div>
-            <h3>Hotels &amp; Hotel Zone</h3>
-            <p>Beachfront hotels in the Zona Hotelera, from Moon Palace and Riu to luxury and 5-star stays.</p>
-          </div>
-        </a>
-        <a class="card" href="things-to-do.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">🤿</div>
-            <h3>Things to Do</h3>
-            <p>Cenotes, Chichén Itzá, snorkeling, Isla Mujeres and the best attractions and excursions.</p>
-          </div>
-        </a>
-        <a class="card" href="weather.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">☀️</div>
-            <h3>Weather &amp; Best Time</h3>
-            <p>Cancún weather month by month, the best time to visit, hurricane and sargassum seasons.</p>
-          </div>
-        </a>
-        <a class="card" href="getting-there.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">✈️</div>
-            <h3>Getting There</h3>
-            <p>Flights to Cancún International Airport (CUN), airport transfers, transportation and car rental.</p>
-          </div>
-        </a>
-        <a class="card" href="travel-tips.html" style="color:inherit">
-          <div class="card-body">
-            <div class="card-icon">🧭</div>
-            <h3>Travel Tips</h3>
-            <p>Is Cancún safe? Time zone, currency, the VisiTax, what to pack and the local map.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Day split ===== -->
-  <section class="section" style="background:var(--color-sand-dark)">
-    <div class="container split">
-      <div>
-        <h2>Golden Days on the Caribbean</h2>
-        <p>Spend your mornings snorkeling the Mesoamerican Reef, swimming in jungle cenotes, or relaxing on the white sand of the Hotel Zone. With 300+ sunny days a year and water that hovers around 28°C, every day in Cancún is made for the beach.</p>
-        <p>Cancún sits on the Caribbean coast of the Yucatán Peninsula in Quintana Roo, Mexico — a launchpad for Chichén Itzá, Tulum, Isla Mujeres and Cozumel.</p>
-        <a href="things-to-do.html" class="btn btn-primary">See Daytime Activities</a>
-      </div>
-      <img src="assets/img/cancun-day.webp" alt="Cancún beach during the day with turquoise Caribbean water" loading="lazy" width="600" height="400" />
-    </div>
-  </section>
-
-  <!-- ===== Night split ===== -->
-  <section class="section">
-    <div class="container split">
-      <img src="assets/img/cancun-night.webp" alt="Cancún Hotel Zone skyline glowing at night" loading="lazy" width="600" height="400" />
-      <div>
-        <h2>Nights That Never Fade</h2>
-        <p>As the sky deepens, Cancún's nightlife switches on. Dine on fresh ceviche and cochinita pibil, sail a sunset catamaran, or dance until sunrise at the Hotel Zone's legendary clubs like Coco Bongo.</p>
-        <p>However you like to spend your evenings, the city has a rhythm waiting for you.</p>
-        <a href="things-to-do.html" class="btn btn-primary">Discover Nightlife</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Stats ===== -->
-  <section class="section stats">
-    <div class="container">
-      <div class="grid grid-3">
-        <div>
-          <div class="stat-number">28°C</div>
-          <div class="stat-label">Average Year-Round</div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>Marketing Agency</h3>
+          <p>Full-service marketing — brand identity, SEO, content, and campaigns that build lasting impact.</p>
         </div>
-        <div>
-          <div class="stat-number">22 km</div>
-          <div class="stat-label">of Beachfront</div>
+        <div class="card">
+          <div class="card-icon">🎤</div>
+          <h3>Singer &amp; Rapper</h3>
+          <p>Original music with heart and edge. Verses and tracks made for the glow of the night.</p>
         </div>
-        <div>
-          <div class="stat-number">300+</div>
-          <div class="stat-label">Sunny Days a Year</div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>UX Design Expert</h3>
+          <p>Human-centered design that turns complex products into effortless experiences.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌙</div>
+          <h3>Twilight Shamanwear</h3>
+          <p>Handmade ponchos and spiritual hoodies that come alive in the moonlight — apparel for every country and culture.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3>Author</h3>
+          <p>Stories that inspire, challenge, and transport. Written works and a creative journey.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✦</div>
+          <h3>Collaborations</h3>
+          <p>Cross-disciplinary work where strategy, sound, design, and craft meet.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <h2 class="section-title">Ready to Book Your Cancún Getaway?</h2>
-      <p class="section-subtitle">Tell us your dates and travel style and we'll help match you with the right all-inclusive resort, tours and airport transfers.</p>
-      <a href="contact.html" class="btn btn-primary">Plan My Trip</a>
+  <!-- ===== Testimonials ===== -->
+  <section class="section" id="testimonials">
+    <div class="container narrow">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="quotes">
+        <blockquote>
+          <p>“A rare talent who can build a brand and then write the anthem for it. The results speak for themselves.”</p>
+          <cite>— Creative Director</cite>
+        </blockquote>
+        <blockquote>
+          <p>“The Twilight Shamanwear pieces are breathtaking — genuinely unlike anything else. Craftsmanship with soul.”</p>
+          <cite>— Boutique Owner</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Our product finally feels effortless. The UX work moved every metric that mattered.”</p>
+          <cite>— Startup Founder</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section alt" id="contact">
+    <div class="container narrow" style="text-align:center">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Have a project, a collaboration, or a question? Let's build something that lasts.</p>
+      <a href="mailto:hello@example.com" class="btn btn-primary">Get in Touch</a>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h4>📍 Cancún</h4>
-          <p>Your guide to the best of Cancún, Quintana Roo — all-inclusive resorts, beaches, ruins, food and unforgettable nights on the Mexican Caribbean.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul class="footer-links">
-            <li><a href="all-inclusive-resorts.html">All-Inclusive Resorts</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="things-to-do.html">Things to Do</a></li>
-            <li><a href="weather.html">Weather</a></li>
-            <li><a href="getting-there.html">Getting There</a></li>
-            <li><a href="travel-tips.html">Travel Tips</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>More</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
-        </div>
+      <div class="footer-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">UX</span>
+          <span class="brand-text"><strong>UX DESIGN</strong><em>PORTFOLIO</em></span>
+        </a>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Visit Cancún. Made with 🌴 for travelers. This is an independent travel guide, not an official tourism board.</p>
+        <p>&copy; 2026 UX Design Portfolio. Marketing · Music · Design · Fashion · Writing.</p>
       </div>
     </div>
   </footer>
