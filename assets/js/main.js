@@ -1,5 +1,5 @@
 /* ============================================================
-   Cancún Travel Site — Interactions
+   UX Design Portfolio — Interactions
    ============================================================ */
 (function () {
   "use strict";
@@ -14,7 +14,6 @@
       toggle.setAttribute("aria-expanded", String(open));
     });
 
-    // Close menu when a link is clicked (mobile)
     links.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
         links.classList.remove("open");
@@ -23,41 +22,31 @@
     });
   }
 
-  /* ---- Day / Night hero toggle ---- */
-  const hero = document.querySelector(".hero");
-  const dnButton = document.querySelector(".daynight-toggle");
+  /* ---- Highlight the nav link for the section in view ---- */
+  const navLinks = Array.prototype.slice.call(
+    document.querySelectorAll('.nav-links a[href^="#"]')
+  );
+  const sections = navLinks
+    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
+    .filter(Boolean);
 
-  if (hero && dnButton) {
-    dnButton.addEventListener("click", function () {
-      const isNight = hero.classList.toggle("hero-night");
-      dnButton.textContent = isNight ? "☀️ Day" : "🌙 Night";
-      dnButton.setAttribute(
-        "aria-label",
-        isNight ? "Switch to daytime view" : "Switch to nighttime view"
-      );
-    });
+  if ("IntersectionObserver" in window && sections.length) {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            navLinks.forEach(function (a) {
+              a.classList.toggle(
+                "active",
+                a.getAttribute("href") === "#" + id
+              );
+            });
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    sections.forEach(function (s) { observer.observe(s); });
   }
-
-  /* ---- Contact form (front-end demo handling) ---- */
-  const form = document.querySelector(".contact-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const success = form.querySelector(".form-success");
-      if (success) {
-        success.classList.add("show");
-        success.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-      form.reset();
-    });
-  }
-
-  /* ---- Mark active nav link based on current page ---- */
-  const path = window.location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav-links a").forEach(function (a) {
-    const href = a.getAttribute("href");
-    if (href === path) {
-      a.classList.add("active");
-    }
-  });
 })();

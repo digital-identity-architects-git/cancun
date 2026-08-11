@@ -1,34 +1,25 @@
-# Visit Cancún — Travel Guide Site
+# UX Design Portfolio — Creative Landing Site
 
-A fast, responsive, SEO-oriented static site for Cancún, Quintana Roo, built around
-real keyword-research clusters (all-inclusive resorts, hotels, weather, things to do,
-flights/transfers and travel tips).
+A dark, tarot-card–styled single-page portfolio for a multidisciplinary creator:
+a marketing agency, music, UX design, Twilight Shamanwear fashion, and writing —
+presented as five fanned "cards" over a moody red-and-black background.
 
 ## Pages
 
-| File | Targets |
+| File | Purpose |
 | --- | --- |
-| `index.html` | Cancún overview / hub |
-| `all-inclusive-resorts.html` | all-inclusive, adults-only, family, luxury packages |
-| `hotels.html` | hotels, Hotel Zone, beachfront, 5-star |
-| `things-to-do.html` | attractions, cenotes, Chichén Itzá, snorkeling, nightlife |
-| `weather.html` | weather by month, best time to visit, hurricane/sargassum |
-| `getting-there.html` | flights, CUN airport, transfers, transportation |
-| `travel-tips.html` | safety, time zone, currency, VisiTax, packing, map |
-| `about.html` | about Cancún + the guide |
-| `contact.html` | trip-planning enquiry form |
+| `index.html` | Single-page site: hero card deck + About, Portfolio, Testimonials, Contact |
+| `404.html` | Themed not-found page |
 
-Supporting files: `404.html`, `robots.txt`, `sitemap.xml`, `.nojekyll`.
+The five hero cards:
 
-## Images
+1. **Singer & Rapper**
+2. **UX Design Expert**
+3. **Marketing Agency** (center / front card)
+4. **Author**
+5. **Fashion Artist** — Twilight Shamanwear (handmade ponchos and spiritual hoodies)
 
-The site references two images you provide:
-
-- `assets/img/cancun-day.webp` — daytime hero / splits
-- `assets/img/cancun-night.webp` — nighttime banners / splits
-
-Drop your two labeled images into `assets/img/` with those exact names (or update the
-`src` / `background-image` references if your filenames differ).
+Supporting files: `robots.txt`, `sitemap.xml`, `.nojekyll`, `.htaccess`.
 
 ## Local preview
 
@@ -37,19 +28,16 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Going live (GitHub Pages)
+## Customizing
 
-A workflow at `.github/workflows/deploy.yml` deploys the site automatically.
-
-1. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Push to the `claude/zen-cannon-6e3ad1` branch (the workflow's trigger branch).
-3. The site publishes at the URL shown under Settings → Pages.
-
-After you have the final URL, replace the `https://cancunitineraries.com/` placeholders in
-`sitemap.xml`, `robots.txt`, and the `<link rel="canonical">` / `og:` tags.
+- **Brand / monogram:** edit the `.brand` block in `index.html` (the `UX` mark and
+  `UX DESIGN / PORTFOLIO` text).
+- **Card artwork:** each card's 2×2 grid uses CSS gradient tiles (`.tg` in
+  `assets/css/style.css`). Swap them for real images with `background-image` if desired.
+- **Contact:** update the `mailto:` link in the Contact section.
 
 ## Stack
 
 Plain HTML + CSS + a small vanilla-JS file (`assets/js/main.js`) — no build step.
-Features: sticky responsive nav with mobile menu, day/night hero toggle, and a
-client-side contact-form demo handler.
+Features: sticky responsive nav with mobile menu, scroll-spy active nav links,
+hover-lift card deck, and a fully responsive layout that stacks the deck on mobile.
